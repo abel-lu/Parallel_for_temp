@@ -23,7 +23,7 @@ namespace myspace
 		{ 
 		}
 		//重载函数调用运算符()；后面的const是对类成员的限制，不允许更改类的成员变量
-		virtual void operator()(const Range& range) const
+		void operator()(const Range& range) const
 		{
 			int height = src.rows;
 			for (int i = range.start; i < range.end; i++)
